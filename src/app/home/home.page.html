@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>
+      ToDoList
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<div class="bg-img">
+  <h1>Ajourd'hui </h1>
+  <h5>{{currentDate|date:'fullDate'}} </h5>
+  <ion-card>
+    <ion-item lines="none">
+      <ion-input [(ngModel)]="myTask" placeholder="Entrer une tâche"></ion-input>
+      <ion-button  (click)="addTaskToFirebase()" shape="round" slot="end" >
+        <ion-icon slot="icon-only" name="add"></ion-icon>
+      </ion-button>
+    </ion-item>
+  </ion-card>
+
+</div>
+</ion-content>
