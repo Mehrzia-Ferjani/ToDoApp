@@ -1,0 +1,19 @@
+.image-center {
+  margin: 0 auto;
+  width:200px;
+  clip-path:ellipse(50% 50%);
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+.background-image {
+  --background: url("../../assets/image.png") 0 0/100% 100% no-repeat;
+}
+ion-input{
+
+  border-radius: 10px;
+}
+ion-label{
+  color: #097b9e !important;
+  text-decoration-style: wavy;
+}
